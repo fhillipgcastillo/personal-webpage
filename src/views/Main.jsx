@@ -57,8 +57,6 @@ export default class Main extends Component {
             direction="column"
             justify="flex-start"
             alignItems="center"
-            item
-            xs={12}
           >
             <Grid container>
               <Grid
