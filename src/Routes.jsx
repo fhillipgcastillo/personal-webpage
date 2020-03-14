@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Main from "./views/Main.jsx";
 import { withStyles } from "@material-ui/styles";
+import NotFound from "./views/404";
 
 // create a component
 class Routes extends Component {
@@ -18,7 +19,7 @@ class Routes extends Component {
               <Main />
             </Route>
             <Route path="*">
-              <h1>404</h1>
+              <NotFound />
             </Route>
           </Switch>
         </Grid>
