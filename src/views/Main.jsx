@@ -70,7 +70,7 @@ export default class Main extends Component {
                 alignItems="center"
               >
                 <img
-                  src="https://demos.creative-tim.com/material-kit-react/static/media/christian.56633ed3.jpg"
+                  src="https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-19/s150x150/45817362_347215099444522_4981738747088338944_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_ohc=1zpRzqh5H1cAX-sfRE_&oh=67c4fd3a2db3412bdf81fe850fe282ab&oe=5EA640C5"
                   style={useStyle.image}
                 />
               </Grid>
