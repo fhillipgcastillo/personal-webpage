@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     flexGrow: 1
   },
   appBar: {
-    position: fixed,
+    position: "fixed",
     top: 25
   }
 });
