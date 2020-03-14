@@ -57,11 +57,13 @@ export default class Main extends Component {
             item
             xs={12}
           >
-            <Grid container item sm={12} style={useStyle.avatar}>
-              <img
-                src="https://demos.creative-tim.com/material-kit-react/static/media/christian.56633ed3.jpg"
-                style={useStyle.image}
-              />
+            <Grid container>
+              <Grid container item sm={12} style={useStyle.avatar}>
+                <img
+                  src="https://demos.creative-tim.com/material-kit-react/static/media/christian.56633ed3.jpg"
+                  style={useStyle.image}
+                />
+              </Grid>
             </Grid>
             <Grid container>
               <div className="jss4">
