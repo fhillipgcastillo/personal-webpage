@@ -72,7 +72,7 @@ export default class Main extends Component {
                 <span class="MuiButton-label">
                   <i class="fab fa-twitter"></i>
                 </span>
-                <span class="MuiTouchRipple-root"></span>
+                <span class="MuiTouchRipple-root">tw</span>
               </button>
               <button
                 class="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
@@ -82,7 +82,7 @@ export default class Main extends Component {
                 <span class="MuiButton-label">
                   <i class="fab fa-instagram"></i>
                 </span>
-                <span class="MuiTouchRipple-root"></span>
+                <span class="MuiTouchRipple-root">ig</span>
               </button>
               <button
                 class="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
@@ -92,7 +92,7 @@ export default class Main extends Component {
                 <span class="MuiButton-label">
                   <i class="fab fa-facebook"></i>
                 </span>
-                <span class="MuiTouchRipple-root"></span>
+                <span class="MuiTouchRipple-root">fb</span>
               </button>
             </div>
           </Grid>
