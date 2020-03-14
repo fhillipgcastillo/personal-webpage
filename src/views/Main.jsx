@@ -23,7 +23,7 @@ const useStyle = {
     backgroundColor: "white",
     borderRadius: 5,
     boxShadow: "0px 1px 5px",
-    transform: "translate(0px, 0px);",
+    transform: "translate(0px, 0px)",
     position: "relative"
   },
   preHeader: {
