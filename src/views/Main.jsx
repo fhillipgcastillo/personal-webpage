@@ -97,7 +97,6 @@ export default class Main extends Component {
             </div>
           </Grid>
           <Grid
-            class="jss3"
             container
             direction="column"
             justify="flex-start"
