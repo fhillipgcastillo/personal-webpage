@@ -36,10 +36,10 @@ const useStyle = {
     height: 200,
     borderRadius: "50%",
     overflow: "hidden",
-    transform: "translate(0px, -50%)"
   },
   avatar: {
-    width: 200
+    width: 200,
+    transform: "translate(0px, -50%)"
   }
 };
 export default class Main extends Component {
