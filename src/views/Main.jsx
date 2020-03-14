@@ -119,7 +119,7 @@ export default class Main extends Component {
               justify="flex-start"
               alignItems="center"
             >
-              <Grid item>
+              <Grid item xs={6}> 
                 An artist of considerable range, Chet Faker — the name taken by
                 Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
                 and records all of his own music, giving it a warm, intimate
