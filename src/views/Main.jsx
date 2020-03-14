@@ -66,7 +66,6 @@ export default class Main extends Component {
               <h6>DESIGNER</h6>
               <button
                 className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-                tabindex="0"
                 type="button"
               >
                 <span className="MuiButton-label">
@@ -76,7 +75,6 @@ export default class Main extends Component {
               </button>
               <button
                 className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-                tabindex="0"
                 type="button"
               >
                 <span className="MuiButton-label">
@@ -86,7 +84,6 @@ export default class Main extends Component {
               </button>
               <button
                 className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-                tabindex="0"
                 type="button"
               >
                 <span className="MuiButton-label">
