@@ -17,7 +17,7 @@ class Routes extends Component {
             <Route path="/">
               <Main />
             </Route>
-            <Route>
+            <Route path="*">
               <h1>404</h1>
             </Route>
           </Switch>
