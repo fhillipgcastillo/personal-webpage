@@ -47,6 +47,13 @@ const useStyle = {
 };
 export default class Main extends Component {
   render() {
+    const profile = {
+      name: "Fhillip G. Castillo",
+      avatar: "https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-19/s150x150/45817362_347215099444522_4981738747088338944_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_ohc=1zpRzqh5H1cAX-sfRE_&oh=67c4fd3a2db3412bdf81fe850fe282ab&oe=5EA640C5",
+      geo: "",
+      occupation: ""
+
+    }
     return (
       <Grid container style={useStyle.justContainer}>
         <Grid container style={useStyle.preHeader}></Grid>
@@ -85,8 +92,8 @@ export default class Main extends Component {
                 alignItems="center"
                 style={{...useStyle.textCenter}}
               >
-                <h3 className="jss16">Christian Louboutin</h3>
-                <h6>DESIGNER</h6>
+                <h3 className="jss16">{profile.name} </h3>
+                <h6>{profile.occupation}</h6>
                 <button
                   className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
                   type="button"
