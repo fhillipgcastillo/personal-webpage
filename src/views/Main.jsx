@@ -96,7 +96,7 @@ export default class Main extends Component {
               </button>
             </div>
           </Grid>
-          <Grid class="jss3" item sm={6}>
+          <Grid item container sm={6}>
             <p>
               An artist of considerable range, Chet Faker — the name taken by
               Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
