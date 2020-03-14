@@ -55,13 +55,13 @@ export default class Main extends Component {
             justify="flex-start"
             alignItems="center"
           >
-            <Grid container style={useStyle.avatar}>
+            <Grid container item sm={12} style={useStyle.avatar}>
               <img
                 src="https://demos.creative-tim.com/material-kit-react/static/media/christian.56633ed3.jpg"
                 style={useStyle.image}
               />
             </Grid>
-            <Grid container style={useStyle.avatar}>
+            <Grid container>
               <div className="jss4">
                 <h3 className="jss16">Christian Louboutin</h3>
                 <h6>DESIGNER</h6>
