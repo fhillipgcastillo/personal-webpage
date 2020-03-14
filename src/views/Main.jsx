@@ -61,47 +61,49 @@ export default class Main extends Component {
             />
           </Grid>
           <Grid container style={useStyle.avatar}>
-            <div class="jss4">
-              <h3 class="jss16">Christian Louboutin</h3>
+            <div className="jss4">
+              <h3 className="jss16">Christian Louboutin</h3>
               <h6>DESIGNER</h6>
               <button
-                class="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
                 tabindex="0"
                 type="button"
               >
-                <span class="MuiButton-label">
-                  <i class="fab fa-twitter"></i>
+                <span className="MuiButton-label">
+                  <i className="fab fa-twitter"></i>
                 </span>
-                <span class="MuiTouchRipple-root">tw</span>
+                <span className="MuiTouchRipple-root">tw</span>
               </button>
               <button
-                class="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
                 tabindex="0"
                 type="button"
               >
-                <span class="MuiButton-label">
-                  <i class="fab fa-instagram"></i>
+                <span className="MuiButton-label">
+                  <i className="fab fa-instagram"></i>
                 </span>
-                <span class="MuiTouchRipple-root">ig</span>
+                <span className="MuiTouchRipple-root">ig</span>
               </button>
               <button
-                class="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
                 tabindex="0"
                 type="button"
               >
-                <span class="MuiButton-label">
-                  <i class="fab fa-facebook"></i>
+                <span className="MuiButton-label">
+                  <i className="fab fa-facebook"></i>
                 </span>
-                <span class="MuiTouchRipple-root">fb</span>
+                <span className="MuiTouchRipple-root">fb</span>
               </button>
             </div>
           </Grid>
-          <Grid class="jss3">
+          <Grid
+            container
+          >
             <p>
               An artist of considerable range, Chet Faker — the name taken by
               Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
               and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure.{" "}
+              with a solid groove structure.
             </p>
           </Grid>
         </Grid>
