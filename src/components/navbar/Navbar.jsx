@@ -24,7 +24,8 @@ const useStyles = makeStyles({
   },
   appBar: {
     position: "fixed",
-    top: 25
+    top: 25,
+    color: "white"
   }
 });
 
