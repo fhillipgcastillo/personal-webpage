@@ -47,64 +47,66 @@ export default class Main extends Component {
     return (
       <Grid container style={useStyle.justContainer}>
         <Grid container style={useStyle.preHeader}></Grid>
-        <Grid
-          container
-          style={useStyle.content}
-          direction="column"
-          justify="flex-start"
-          alignItems="center"
-        >
-          <Grid container style={useStyle.avatar}>
-            <img
-              src="https://demos.creative-tim.com/material-kit-react/static/media/christian.56633ed3.jpg"
-              style={useStyle.image}
-            />
-          </Grid>
-          <Grid container style={useStyle.avatar}>
-            <div className="jss4">
-              <h3 className="jss16">Christian Louboutin</h3>
-              <h6>DESIGNER</h6>
-              <button
-                className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-                type="button"
-              >
-                <span className="MuiButton-label">
-                  <i className="fab fa-twitter"></i>
-                </span>
-                <span className="MuiTouchRipple-root">tw</span>
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-                type="button"
-              >
-                <span className="MuiButton-label">
-                  <i className="fab fa-instagram"></i>
-                </span>
-                <span className="MuiTouchRipple-root">ig</span>
-              </button>
-              <button
-                className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-                type="button"
-              >
-                <span className="MuiButton-label">
-                  <i className="fab fa-facebook"></i>
-                </span>
-                <span className="MuiTouchRipple-root">fb</span>
-              </button>
-            </div>
-          </Grid>
+        <Grid container>
           <Grid
             container
+            style={useStyle.content}
             direction="column"
             justify="flex-start"
             alignItems="center"
           >
-            <p>
-              An artist of considerable range, Chet Faker — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure.
-            </p>
+            <Grid container style={useStyle.avatar}>
+              <img
+                src="https://demos.creative-tim.com/material-kit-react/static/media/christian.56633ed3.jpg"
+                style={useStyle.image}
+              />
+            </Grid>
+            <Grid container style={useStyle.avatar}>
+              <div className="jss4">
+                <h3 className="jss16">Christian Louboutin</h3>
+                <h6>DESIGNER</h6>
+                <button
+                  className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                  type="button"
+                >
+                  <span className="MuiButton-label">
+                    <i className="fab fa-twitter"></i>
+                  </span>
+                  <span className="MuiTouchRipple-root">tw</span>
+                </button>
+                <button
+                  className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                  type="button"
+                >
+                  <span className="MuiButton-label">
+                    <i className="fab fa-instagram"></i>
+                  </span>
+                  <span className="MuiTouchRipple-root">ig</span>
+                </button>
+                <button
+                  className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                  type="button"
+                >
+                  <span className="MuiButton-label">
+                    <i className="fab fa-facebook"></i>
+                  </span>
+                  <span className="MuiTouchRipple-root">fb</span>
+                </button>
+              </div>
+            </Grid>
+            <Grid
+              container
+              direction="column"
+              justify="flex-start"
+              alignItems="center"
+            >
+              <p>
+                An artist of considerable range, Chet Faker — the name taken by
+                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
+                and records all of his own music, giving it a warm, intimate
+                feel with a solid groove structure.
+              </p>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
