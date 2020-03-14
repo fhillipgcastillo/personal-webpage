@@ -98,6 +98,9 @@ export default class Main extends Component {
           </Grid>
           <Grid
             container
+            direction="column"
+            justify="flex-start"
+            alignItems="center"
           >
             <p>
               An artist of considerable range, Chet Faker — the name taken by
