@@ -35,7 +35,7 @@ const useStyle = {
     width: 200,
     height: 200,
     borderRadius: "50%",
-    overflow: "hidden",
+    overflow: "hidden"
   },
   avatar: {
     width: 200,
@@ -74,7 +74,14 @@ export default class Main extends Component {
               </Grid>
             </Grid>
             <Grid container>
-              <div className="jss4">
+              <Grid
+                
+                className="jss4"
+                container
+                direction="column"
+                justify="flex-start"
+                alignItems="center"
+              >
                 <h3 className="jss16">Christian Louboutin</h3>
                 <h6>DESIGNER</h6>
                 <button
@@ -104,7 +111,7 @@ export default class Main extends Component {
                   </span>
                   <span className="MuiTouchRipple-root">fb</span>
                 </button>
-              </div>
+              </Grid>
             </Grid>
             <Grid
               container
