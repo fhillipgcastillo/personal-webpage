@@ -14,7 +14,7 @@ class Routes extends Component {
         <Grid container>
           <Navbar />
           <Switch>
-            <Route path="/">
+            <Route path="/" exact>
               <Main />
             </Route>
             <Route path="*">
