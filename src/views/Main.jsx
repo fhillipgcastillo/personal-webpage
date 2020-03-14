@@ -39,7 +39,7 @@ const useStyle = {
     transform: "translate(0px, -50%)"
   },
   avatar: {
-    width: 200,
+    width: 200
   }
 };
 export default class Main extends Component {
@@ -61,7 +61,40 @@ export default class Main extends Component {
             />
           </Grid>
           <Grid container style={useStyle.avatar}>
-          <h1>COntent</h1>
+            <div class="jss4">
+              <h3 class="jss16">Christian Louboutin</h3>
+              <h6>DESIGNER</h6>
+              <button
+                class="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                tabindex="0"
+                type="button"
+              >
+                <span class="MuiButton-label">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span class="MuiTouchRipple-root"></span>
+              </button>
+              <button
+                class="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                tabindex="0"
+                type="button"
+              >
+                <span class="MuiButton-label">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="MuiTouchRipple-root"></span>
+              </button>
+              <button
+                class="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
+                tabindex="0"
+                type="button"
+              >
+                <span class="MuiButton-label">
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <span class="MuiTouchRipple-root"></span>
+              </button>
+            </div>
           </Grid>
         </Grid>
       </Grid>
