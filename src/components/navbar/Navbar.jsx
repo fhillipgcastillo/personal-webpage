@@ -21,6 +21,10 @@ const useStyles = makeStyles({
   },
   title: {
     flexGrow: 1
+  },
+  appBar: {
+    position: fixed,
+    top: 25
   }
 });
 
@@ -28,7 +32,7 @@ export default function Navba() {
   const classes = useStyles();
 
   return <div className={classes.root}>
-    <AppBar position="static" color="transparent">
+    <AppBar position="static" color="transparent" className={classes.appBar}>
       <Toolbar>
         <IconButton
           edge="start"
