@@ -58,7 +58,15 @@ export default class Main extends Component {
             xs={12}
           >
             <Grid container>
-              <Grid container item sm={12} style={useStyle.avatar}>
+              <Grid
+                container
+                item
+                sm={12}
+                style={useStyle.avatar}
+                direction="column"
+                justify="flex-start"
+                alignItems="center"
+              >
                 <img
                   src="https://demos.creative-tim.com/material-kit-react/static/media/christian.56633ed3.jpg"
                   style={useStyle.image}
