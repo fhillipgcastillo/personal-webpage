@@ -75,7 +75,7 @@ export default class Main extends Component {
             </Grid>
             <Grid container>
               <Grid
-                
+                item
                 className="jss4"
                 container
                 direction="column"
