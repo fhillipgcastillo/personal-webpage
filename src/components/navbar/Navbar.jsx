@@ -44,7 +44,10 @@ export default function Navba() {
           {/* <MenuIcon /> */}
         </IconButton>
         <Typography variant="h6" className={classes.title}>
-          News
+          Me
+        </Typography>
+        <Typography variant="h6" className={classes.title}>
+          Photography
         </Typography>
         <Button color="inherit">Login</Button>
       </Toolbar>
