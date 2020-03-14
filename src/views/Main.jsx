@@ -84,6 +84,7 @@ export default class Main extends Component {
                 direction="column"
                 justify="flex-start"
                 alignItems="center"
+                style={{...useStyle.textCenter}}
               >
                 <h3 className="jss16">Christian Louboutin</h3>
                 <h6>DESIGNER</h6>
