@@ -14,7 +14,8 @@ import {
 
 const useStyles = makeStyles({
   menuButton: {
-    marginRight: 2
+    marginRight: 2,
+    flexGrow: 1
   },
   title: {
     flexGrow: 1
@@ -46,18 +47,19 @@ export default function Navba() {
         >
           {/* <MenuIcon /> */}
           <Typography variant="h6" className={classes.title}>
-          <Link to="/">Fhillip G. Castillo</Link>
-        </Typography>
-          
+            <Link to="/">Fhillip G. Castillo</Link>
+          </Typography>
         </IconButton>
-        
+
         <div className={classes.grow3} />
-        <Typography variant="h6" className={classes.title}>
-          <Link to="/portfolio">Portfolio</Link>
-        </Typography>
-        <Typography variant="h6" className={classes.title}>
-          <Link to="/photography">Photography</Link>
-        </Typography>
+        <div className={classes.grow}>
+          <Typography variant="h6" className={classes.title}>
+            <Link to="/portfolio">Portfolio</Link>
+          </Typography>
+          <Typography variant="h6" className={classes.title}>
+            <Link to="/photography">Photography</Link>
+          </Typography>
+        </div>
       </Toolbar>
     </AppBar>
   );
