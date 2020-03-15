@@ -54,7 +54,7 @@ export default function Navba() {
           {/* <MenuIcon /> */}
           <Typography variant="h6" className={classes.title}>
             
-            <Link to="/"><img src={logo} style="width: 32px; margin: 0 10px;" /> Fhillip G. Castillo</Link>
+            <Link to="/">{/*<img src={logo} style="width: 32px; margin: 0 10px;" /> */}Fhillip G. Castillo</Link>
           </Typography>
         </IconButton>
         <div className={classes.grow3} />
