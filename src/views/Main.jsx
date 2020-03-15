@@ -14,7 +14,7 @@ const useStyle = {
     backgroundColor: "#0e1e25",
     width: "100%",
     height: "100%",
-    minHeight: 1000
+    minHeight: 888
   },
   content: {
     margin: 0,
