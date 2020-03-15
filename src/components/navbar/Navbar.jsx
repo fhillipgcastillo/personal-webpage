@@ -56,7 +56,6 @@ export default function Navba() {
         <Typography variant="h6" className={classes.title}>
           <Link to="/photography">Photography</Link>
         </Typography>
-        <Button color="inherit">Login</Button>
       </Toolbar>
     </AppBar>
   );
