@@ -55,7 +55,7 @@ export default function Navba() {
           </Typography>
         </IconButton>
         <div className={classes.grow3} />
-        <div className={classes.flexgrow}>
+        <div className={classes.flexGrow}>
           <Typography variant="h6" className={classes.title}>
             <Link to="/portfolio">Portfolio</Link>
           </Typography>
