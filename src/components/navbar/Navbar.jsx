@@ -50,16 +50,15 @@ export default function Navba() {
             <Link to="/">Fhillip G. Castillo</Link>
           </Typography>
         </IconButton>
-
         <div className={classes.grow3} />
-        <div className={classes.grow}>
+        <Grid className={classes.grow}>
           <Typography variant="h6" className={classes.title}>
             <Link to="/portfolio">Portfolio</Link>
           </Typography>
           <Typography variant="h6" className={classes.title}>
             <Link to="/photography">Photography</Link>
           </Typography>
-        </div>
+        </Grid>
       </Toolbar>
     </AppBar>
   );
