@@ -33,26 +33,24 @@ export default function Navba() {
   const classes = useStyles();
 
   return (
-    
-      <AppBar position="static" color="transparent" className={classes.appBar}>
-        <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            {/* <MenuIcon /> */}
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            <Link to="/">Me</Link>
-          </Typography>
-          <Typography variant="h6" className={classes.title}>
-            <Link to="/photography">Photography</Link>
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    
+    <AppBar position="static" color="transparent" className={classes.appBar}>
+      <Toolbar>
+        <IconButton
+          edge="start"
+          className={classes.menuButton}
+          color="inherit"
+          aria-label="menu"
+        >
+          {/* <MenuIcon /> */}
+        </IconButton>
+        <Typography variant="h6" className={classes.title}>
+          <Link to="/">Me</Link>
+        </Typography>
+        <Typography variant="h6" className={classes.title}>
+          <Link to="/photography">Photography</Link>
+        </Typography>
+        <Button color="inherit">Login</Button>
+      </Toolbar>
+    </AppBar>
   );
 }
