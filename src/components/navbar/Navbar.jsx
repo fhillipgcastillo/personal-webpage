@@ -45,11 +45,12 @@ export default function Navba() {
           aria-label="menu"
         >
           {/* <MenuIcon /> */}
-          Fhillip Castillo
-        </IconButton>
-        <Typography variant="h6" className={classes.title}>
-          <Link to="/"></Link>
+          <Typography variant="h6" className={classes.title}>
+          <Link to="/">Fhillip G. Castillo</Link>
         </Typography>
+          
+        </IconButton>
+        
         <div className={classes.grow3} />
         <Typography variant="h6" className={classes.title}>
           <Link to="/portfolio">Portfolio</Link>
