@@ -49,7 +49,7 @@ export default function Navba() {
         <Typography variant="h6" className={classes.title}>
           <Link to="/">Me</Link>
         </Typography>
-        <div className={classes.grow} />
+        <div className={classes.grow3} />
         <Typography variant="h6" className={classes.title}>
           <Link to="/photography">Photography</Link>
         </Typography>
