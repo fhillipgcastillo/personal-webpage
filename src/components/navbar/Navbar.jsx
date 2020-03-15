@@ -44,7 +44,7 @@ export default function Navba() {
           {/* <MenuIcon /> */}
         </IconButton>
         <div className={classes.grow} />
-        <Grid container>
+        {/* <Grid container> */}
           <Typography variant="h6" className={classes.title}>
             <Link to="/">Me</Link>
           </Typography>
@@ -52,7 +52,7 @@ export default function Navba() {
             <Link to="/photography">Photography</Link>
           </Typography>
           <Button color="inherit">Login</Button>
-        </Grid>
+        {/* </Grid> */}
       </Toolbar>
     </AppBar>
   );
