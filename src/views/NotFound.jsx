@@ -1,10 +1,14 @@
 import React from "react";
+import { createStyles } from "@material-ui/core";
 
+const useStyles = createStyles({
+
+});
 export default function NotFound404() {
   return (
     <div style={{backgroundColor:"#0e1e25"}}>
       <div className="main">
-        <div className="card">
+        <Card className="card">
           <div className="header">
             <h1>Page Not Found</h1>
           </div>
@@ -30,7 +34,7 @@ export default function NotFound404() {
               </a>
             </p>
           </div>
-        </div>
+        </Card>
       </div>
     </div>
   );
