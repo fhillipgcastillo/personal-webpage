@@ -51,7 +51,7 @@ export default function Navba() {
           </Typography>
         </IconButton>
         <div className={classes.grow3} />
-        <Grid item container className={classes.grow}>
+        <Grid container className={classes.grow}>
           <Typography variant="h6" className={classes.title}>
             <Link to="/portfolio">Portfolio</Link>
           </Typography>
