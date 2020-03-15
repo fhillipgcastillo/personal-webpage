@@ -31,7 +31,7 @@ const useStyles = makeStyles({
   flexGrow: {
    display: "flex",
    flexGrow:1
-  }
+  },
   grow3: {
     flexGrow: 3
   }
