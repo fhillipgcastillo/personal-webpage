@@ -11,7 +11,7 @@ const useStyle = {
     marginRight: 20
   },
   justContainer: {
-    backgroundColor: "black",
+    backgroundColor: "#0e1e25",
     width: "100%",
     height: "100%",
     minHeight: 1000
@@ -28,8 +28,7 @@ const useStyle = {
   },
   preHeader: {
     width: "100%",
-    background:
-      "url('https://demos.creative-tim.com/material-kit-react/static/media/profile-bg.baf6b40a.jpg')"
+    // background: "url('https://demos.creative-tim.com/material-kit-react/static/media/profile-bg.baf6b40a.jpg')"
   },
   image: {
     width: 200,
