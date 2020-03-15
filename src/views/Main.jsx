@@ -92,7 +92,7 @@ export default class Main extends Component {
                 style={{...useStyle.textCenter}}
               >
                 <h3 className="jss16">{profile.name} </h3>
-                <h6>{profile.occupation}</h6>
+                <h4>{profile.occupation}</h4>
                 <button
                   className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
                   type="button"
