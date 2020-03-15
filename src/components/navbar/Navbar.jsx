@@ -28,8 +28,9 @@ const useStyles = makeStyles({
   grow: {
     flexGrow: 1
   },
-  flex: {
-   display: "flex"
+  flexGrow: {
+   display: "flex",
+   flexGrow:1
   }
   grow3: {
     flexGrow: 3
@@ -54,7 +55,7 @@ export default function Navba() {
           </Typography>
         </IconButton>
         <div className={classes.grow3} />
-        <div className={classes.flex, classes.grow}>
+        <div className={classes.flexgrow}>
           <Typography variant="h6" className={classes.title}>
             <Link to="/portfolio">Portfolio</Link>
           </Typography>
