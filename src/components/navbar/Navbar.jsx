@@ -25,8 +25,11 @@ const useStyles = makeStyles({
     color: "white"
   },
   grow: {
-    flexGrow: 1,
-  }
+    flexGrow: 1
+  },
+  grow3: {
+    flexGrow: 3
+  },
 });
 
 export default function Navba() {
@@ -43,16 +46,14 @@ export default function Navba() {
         >
           {/* <MenuIcon /> */}
         </IconButton>
+        <Typography variant="h6" className={classes.title}>
+          <Link to="/">Me</Link>
+        </Typography>
         <div className={classes.grow} />
-        {/* <Grid container> */}
-          <Typography variant="h6" className={classes.title}>
-            <Link to="/">Me</Link>
-          </Typography>
-          <Typography variant="h6" className={classes.title}>
-            <Link to="/photography">Photography</Link>
-          </Typography>
-          <Button color="inherit">Login</Button>
-        {/* </Grid> */}
+        <Typography variant="h6" className={classes.title}>
+          <Link to="/photography">Photography</Link>
+        </Typography>
+        <Button color="inherit">Login</Button>
       </Toolbar>
     </AppBar>
   );
