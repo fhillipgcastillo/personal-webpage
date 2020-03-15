@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NotFound404() {
   return (
-    <div>
+    <div styles={{backgroundColor:"rgb(14, 30, 37)"}}>
       <div class="main">
         <div class="card">
           <div class="header">
