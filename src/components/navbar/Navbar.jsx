@@ -37,6 +37,8 @@ const useStyles = makeStyles({
   }
 });
 
+import logo from '../../assets/FC logo.png';
+
 export default function Navba() {
   const classes = useStyles();
 
@@ -51,6 +53,7 @@ export default function Navba() {
         >
           {/* <MenuIcon /> */}
           <Typography variant="h6" className={classes.title}>
+            <img src={logo} />
             <Link to="/">Fhillip G. Castillo</Link>
           </Typography>
         </IconButton>
