@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   },
   grow3: {
     flexGrow: 3
-  },
+  }
 });
 
 export default function Navba() {
@@ -45,9 +45,10 @@ export default function Navba() {
           aria-label="menu"
         >
           {/* <MenuIcon /> */}
+          Fhillip Castillo
         </IconButton>
         <Typography variant="h6" className={classes.title}>
-          <Link to="/">Me</Link>
+          <Link to="/"></Link>
         </Typography>
         <div className={classes.grow3} />
         <Typography variant="h6" className={classes.title}>
