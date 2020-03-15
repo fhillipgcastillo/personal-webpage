@@ -43,13 +43,15 @@ export default function Navba() {
         >
           {/* <MenuIcon /> */}
         </IconButton>
-        <Typography variant="h6" className={classes.title}>
-          <Link to="/">Me</Link>
-        </Typography>
-        <Typography variant="h6" className={classes.title}>
-          <Link to="/photography">Photography</Link>
-        </Typography>
-        <Button color="inherit">Login</Button>
+        <Grid container>
+          <Typography variant="h6" className={classes.title}>
+            <Link to="/">Me</Link>
+          </Typography>
+          <Typography variant="h6" className={classes.title}>
+            <Link to="/photography">Photography</Link>
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Grid>
       </Toolbar>
     </AppBar>
   );
