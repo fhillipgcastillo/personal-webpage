@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "predeploy":"npm rum build",
-    "deploy":"bh-pages -d build",
+    "deploy":"gh-pages -d build",
     "build": "webpack",
     "dev": "webpack-dev-server",
     "start": "",
