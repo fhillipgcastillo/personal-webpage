@@ -49,10 +49,7 @@ export default class Main extends Component {
     const profile = {
       name: "Fhillip G. Castillo",
       avatar: "https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-19/s150x150/45817362_347215099444522_4981738747088338944_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_ohc=1zpRzqh5H1cAX-sfRE_&oh=67c4fd3a2db3412bdf81fe850fe282ab&oe=5EA640C5",
-      geo: `An artist of considerable range, Chet Faker — the name taken by
-      Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-      and records all of his own music, giving it a warm, intimate
-      feel with a solid groove structure.`,
+      geo: `I'm a person who loves to team work, I am also well experienced with Agile and Scrum Methodologies and my goals are to help my co-workers to grow and improve as software developers, deliver high-quality software, fast, with excellent user experience to commit the customers' needs and goals.`,
       occupation: "Software Engeneering"
 
     }
