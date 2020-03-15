@@ -29,15 +29,15 @@ const useStyles = makeStyles({
     flexGrow: 1
   },
   flexGrow: {
-   display: "flex",
-   flexGrow:1
+    display: "flex",
+    flexGrow: 1
   },
   grow3: {
     flexGrow: 3
   }
 });
 
-import logo from '../../assets/FC logo.png';
+import logo from "../../assets/FC logo.png";
 
 export default function Navba() {
   const classes = useStyles();
@@ -53,13 +53,13 @@ export default function Navba() {
         >
           {/* <MenuIcon /> */}
           <Typography variant="h6" className={classes.title}>
-            <img src={logo} />
-            <Link to="/">Fhillip G. Castillo</Link>
+            
+            <Link to="/"><img src={logo} style="width: 32px; margin: 0 10px;" /> Fhillip G. Castillo</Link>
           </Typography>
         </IconButton>
         <div className={classes.grow3} />
         <div className={classes.flexGrow}>
-        <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={classes.title}>
             <Link to="/about">About</Link>
           </Typography>
           <Typography variant="h6" className={classes.title}>
