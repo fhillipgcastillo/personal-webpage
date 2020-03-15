@@ -51,14 +51,14 @@ export default function Navba() {
           </Typography>
         </IconButton>
         <div className={classes.grow3} />
-        <Grid className={classes.grow}>
+        <div className={classes.grow}>
           <Typography variant="h6" className={classes.title}>
             <Link to="/portfolio">Portfolio</Link>
           </Typography>
           <Typography variant="h6" className={classes.title}>
             <Link to="/photography">Photography</Link>
           </Typography>
-        </Grid>
+        </div>
       </Toolbar>
     </AppBar>
   );
