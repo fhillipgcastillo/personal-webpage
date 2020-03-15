@@ -3,12 +3,12 @@ import React from "react";
 export default function NotFound404() {
   return (
     <div styles={{backgroundColor:"rgb(14, 30, 37)"}}>
-      <div class="main">
-        <div class="card">
-          <div class="header">
+      <div className="main">
+        <div className="card">
+          <div className="header">
             <h1>Page Not Found</h1>
           </div>
-          <div class="body">
+          <div className="body">
             <p>
               Looks like you've followed a broken link or entered a URL that
               doesn't exist on this site.
