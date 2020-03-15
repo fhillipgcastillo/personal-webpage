@@ -33,7 +33,7 @@ export default function Navba() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    
       <AppBar position="static" color="transparent" className={classes.appBar}>
         <Toolbar>
           <IconButton
@@ -53,6 +53,6 @@ export default function Navba() {
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-    </div>
+    
   );
 }
