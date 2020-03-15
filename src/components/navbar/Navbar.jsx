@@ -13,9 +13,6 @@ import {
 } from "@material-ui/core";
 
 const useStyles = makeStyles({
-  root: {
-    flexGrow: 1
-  },
   menuButton: {
     marginRight: 2
   },
@@ -26,6 +23,9 @@ const useStyles = makeStyles({
     position: "fixed",
     top: 25,
     color: "white"
+  },
+  grow: {
+    flexGrow: 1,
   }
 });
 
@@ -43,6 +43,7 @@ export default function Navba() {
         >
           {/* <MenuIcon /> */}
         </IconButton>
+        <div className={classes.grow} />
         <Grid container>
           <Typography variant="h6" className={classes.title}>
             <Link to="/">Me</Link>
