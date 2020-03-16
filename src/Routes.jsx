@@ -15,6 +15,7 @@ const history = createBrowserHistory();
 // create a component
 class Routes extends Component {
   render() {
+    console.info("NODE_ENV",  process.env.NODE_ENV);
     console.info("base", basename);
     return (
       <Router history={history} basename={basename}>
