@@ -7,7 +7,7 @@ import Main from "./views/Main.jsx";
 import { withStyles } from "@material-ui/styles";
 import NotFound from "./views/NotFound.jsx";
 import { createBrowserHistory } from "history";
-
+const env = process.env.NODE_ENV;
 const basename = process.env.NODE_ENV === "githubenv" ? "/personal-webpage/" : "/";
 
 const history = createBrowserHistory();
@@ -15,7 +15,7 @@ const history = createBrowserHistory();
 // create a component
 class Routes extends Component {
   render() {
-    console.info("NODE_ENV",  process.env.NODE_ENV);
+    console.info("NODE_ENV", env);
     console.info("base", basename);
     return (
       <Router history={history} basename={basename}>
