@@ -11,6 +11,7 @@ import NotFound from "./views/NotFound.jsx";
 class Routes extends Component {
   render() {
     const basename = process.env.NODE_ENV === "production" ? "/personal-webpage" : "/";
+    console.log(basename);
     return (
       <Router basename={basename}>
         <Grid container>
