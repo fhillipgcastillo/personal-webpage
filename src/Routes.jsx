@@ -15,7 +15,7 @@ const history = createBrowserHistory();
 // create a component
 class Routes extends Component {
   render() {
-    console.log("base", basename);
+    console.info("base", basename);
     return (
       <Router history={history} basename={basename}>
         <Grid container>
