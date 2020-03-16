@@ -8,7 +8,7 @@ import { withStyles } from "@material-ui/styles";
 import NotFound from "./views/NotFound.jsx";
 import { createBrowserHistory } from "history";
 const env = process.env.NODE_ENV;
-const basename = process.env.NODE_ENV === "githubenv" ? "/personal-webpage/" : "/";
+const basename =  "/personal-webpage/";
 
 const history = createBrowserHistory();
 
