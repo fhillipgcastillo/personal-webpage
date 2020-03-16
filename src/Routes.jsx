@@ -6,17 +6,19 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import Main from "./views/Main.jsx";
 import { withStyles } from "@material-ui/styles";
 import NotFound from "./views/NotFound.jsx";
-import createHistory from 'history';
+import { createBrowserHistory } from "history";
+
+const history = createBrowserHistory();
 
 
 // create a component
 class Routes extends Component {
   render() {
     const basename = process.env.NODE_ENV === "production" ? "/personal-webpage" : "/";
-    var history = createHistory();
+    
     console.log(basename);
     return (
-      <Router basename={basename}>
+      <Router basename={basename} history={history}>
         <Grid container>
           <Navbar />
           <Switch>
