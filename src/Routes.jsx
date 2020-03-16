@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import Main from "./views/Main.jsx";
 import { withStyles } from "@material-ui/styles";
 import NotFound from "./views/NotFound.jsx";
-import createHistory from "history"
+import {createHistory} from "history"
 
 
 // create a component
