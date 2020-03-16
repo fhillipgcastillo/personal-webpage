@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "predeploy": "npm rum build",
+    "predeploy": "webpack --mode=githubenv",
     "deploy": "gh-pages -d build",
     "build": "webpack --mode=production",
     "dev": "webpack-dev-server",
