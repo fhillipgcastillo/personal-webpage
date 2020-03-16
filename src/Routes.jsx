@@ -10,8 +10,9 @@ import NotFound from "./views/NotFound.jsx";
 // create a component
 class Routes extends Component {
   render() {
+    const basename = process.env.NODE_ENV === "production" ? "/personal-webpage" : "/";
     return (
-      <Router>
+      <Router basename={basename}>
         <Grid container>
           <Navbar />
           <Switch>
