@@ -13,7 +13,7 @@ import createHistory from 'history';
 class Routes extends Component {
   render() {
     const basename = process.env.NODE_ENV === "production" ? "/personal-webpage" : "/";
-    var history = CreateHistory();
+    var history = createHistory();
     console.log(basename);
     return (
       <Router basename={basename}>
