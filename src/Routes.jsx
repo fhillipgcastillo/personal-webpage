@@ -8,17 +8,17 @@ import { withStyles } from "@material-ui/styles";
 import NotFound from "./views/NotFound.jsx";
 import { createBrowserHistory } from "history";
 
-const history = createBrowserHistory();
+const basename = process.env.NODE_ENV === "production" ? "/personal-webpage/" : "/";
 
+const history = useBasename(createBrowserHistory)({
+  basename: basename
+})
 
 // create a component
 class Routes extends Component {
   render() {
-    const basename = process.env.NODE_ENV === "production" ? "/personal-webpage" : "/";
-    
-    console.log(basename);
     return (
-      <Router basename={basename} history={history}>
+      <Router history={history}>
         <Grid container>
           <Navbar />
           <Switch>
