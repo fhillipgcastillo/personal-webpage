@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import Main from "./views/Main.jsx";
 import { withStyles } from "@material-ui/styles";
 import NotFound from "./views/NotFound.jsx";
-import { createBrowserHistory } from "history";
+import { createBrowserHistory, useBasename } from "history";
 
 const basename = process.env.NODE_ENV === "production" ? "/personal-webpage/" : "/";
 
