@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "predeploy": "set NODE_ENV=githubenv && webpack --mode=production",
+    "predeploy": "webpack --mode=production",
     "deploy": "gh-pages -d build",
     "build": "webpack --mode=production",
     "dev": "webpack-dev-server",
