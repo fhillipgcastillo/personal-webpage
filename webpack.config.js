@@ -33,5 +33,5 @@ module.exports = {
       template: 'src/index.html'
     })
   ],
-  mode: process.env.NODE_ENV === "production" || process.env.NODE_ENV === "githubenv" ? "production" : "development"
+  mode: process.env.NODE_ENV === "production" ? "production" : "development"
 };
