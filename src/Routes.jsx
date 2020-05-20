@@ -1,35 +1,36 @@
-//import liraries
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Grid from "@material-ui/core/Grid";
-import Navbar from "./components/navbar/Navbar.jsx";
-import Main from "./views/Main.jsx";
 import { withStyles } from "@material-ui/styles";
-import NotFound from "./views/NotFound.jsx";
+import Grid from "@material-ui/core/Grid";
 import { createBrowserHistory } from "history";
+
+// Dynamyc Import / Lazy loading import
+const Main = React.lazy(() => import("./views/Main.jsx"));
+const Navbar = React.lazy(() => import("./components/navbar/Navbar.jsx"));
+const NotFound = React.lazy(() => import("./views/NotFound.jsx"));
+
 const env = process.env.NODE_ENV;
-const basename =  "/personal-webpage/";
+const basename = env === "development" ? "/" : "/personal-webpage/";
+const history = createBrowserHistory(basename);
 
-const history = createBrowserHistory();
+function Loading() {
+  return <label>loading...</label>;
+}
 
-// create a component
 class Routes extends Component {
+  state = {};
   render() {
-    console.info("NODE_ENV", env);
-    console.info("base", basename);
     return (
       <Router history={history} basename={basename}>
-        <Grid container>
-          <Navbar />
-          <Switch>
-            <Route path="/" exact>
-              <Main />
-            </Route>
-            <Route path="*">
-              <NotFound />
-            </Route>
-          </Switch>
-        </Grid>
+        <React.Suspense fallback={<Loading />}>
+          <Grid container>
+            <Navbar />
+            <Switch>
+              <Route path="/" exact component={Main} />
+              <Route component={NotFound} />
+            </Switch>
+          </Grid>
+        </React.Suspense>
       </Router>
     );
   }
@@ -39,13 +40,11 @@ class Routes extends Component {
 const styles = {
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#2c3e50',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#2c3e50",
   },
 };
 
 //make this component available to the app
-
-
 export default withStyles(styles)(Routes);

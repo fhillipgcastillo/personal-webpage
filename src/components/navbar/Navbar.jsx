@@ -60,9 +60,6 @@ export default function Navba() {
         <div className={classes.grow3} />
         <div className={classes.flexGrow}>
           <Typography variant="h6" className={classes.title}>
-            <Link to="/about">About</Link>
-          </Typography>
-          <Typography variant="h6" className={classes.title}>
             <Link to="/">Portfolio</Link>
           </Typography>
           <Typography variant="h6" className={classes.title}>
@@ -70,6 +67,9 @@ export default function Navba() {
           </Typography>
           <Typography variant="h6" className={classes.title}>
             <Link to="/photography">Photography</Link>
+          </Typography>
+          <Typography variant="h6" className={classes.title}>
+            <Link to="/contact">Contact</Link>
           </Typography>
         </div>
       </Toolbar>

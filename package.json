@@ -6,7 +6,8 @@
   "scripts": {
     "predeploy": "npm run build && webpack --mode=production",
     "deploy": "gh-pages -d build",
-    "build": "webpack --mode=production",
+    "build": "NODE_ENV='production' webpack -p",
+    "build-win": "SET NODE_ENV='production' && webpack -p",
     "dev": "webpack-dev-server",
     "start": "",
     "autosync": "sh ./node_modules/git-autosave-and-hooks/check-git.sh"
@@ -31,15 +32,21 @@
     "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "syntax-dynamic-import"
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
     "babel": "^6.23.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "css-loader": "^3.4.2",
     "file-loader": "^5.1.0",
     "gh-pages": "^2.2.0",
