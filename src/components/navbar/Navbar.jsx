@@ -43,7 +43,7 @@ export default function Navba() {
   const classes = useStyles();
 
   return (
-    <AppBar position="static" color="transparent" className={classes.appBar}>
+    <AppBar position="static" style={{backgroundColor: "#0e1e25", top: 0}} className={classes.appBar}>
       <Toolbar>
         <IconButton
           edge="start"
@@ -59,8 +59,14 @@ export default function Navba() {
         </IconButton>
         <div className={classes.grow3} />
         <div className={classes.flexGrow}>
+        <Typography variant="h6" className={classes.title}>
+            <Link to="/#about">About</Link>
+          </Typography>
           <Typography variant="h6" className={classes.title}>
-            <Link to="/">Portfolio</Link>
+            <Link to="/#experiences">Experiences</Link>
+          </Typography>
+          <Typography variant="h6" className={classes.title}>
+            <Link to="/#portfolio">Portfolio</Link>
           </Typography>
           <Typography variant="h6" className={classes.title}>
             <Link to="/blog">Blog</Link>
