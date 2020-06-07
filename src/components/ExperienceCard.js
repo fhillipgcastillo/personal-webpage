@@ -7,12 +7,11 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
-  root: {
-    minWidth: 275,
+  card: {
+    backgroundColor: "#2f3c42",
+    color: "white",
     marginTop: 15,
     marginBottom: 15,
-    backgroundColor: "#efefef",
-
   },
   bullet: {
     display: 'inline-block',
@@ -20,7 +19,7 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
-    fontSize: 14,
+    color: "#00ad9f"
   },
   pos: {
     marginBottom: 12,
@@ -32,12 +31,12 @@ export default function ExperienceCard({title="", company, jobType, startedDate,
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root} >
+    <Card className={classes.card} >
       <CardContent>
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5" component="h2" className={classes.title}>
           {title}
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos}>
         {jobType} at {company}
         </Typography>
         <Typography variant="body2" component="p">

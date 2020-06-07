@@ -8,10 +8,13 @@ import Typography from "@material-ui/core/Typography";
 import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles({
-  root: {
+  card: {
+    backgroundColor: "#2f3c42",
+    color: "white",
     marginTop: 15,
     marginBottom: 15,
-    backgroundColor: "#efefef",
+    width: "90%",
+    textAlign: "center"
   },
   bullet: {
     display: "inline-block",
@@ -19,7 +22,7 @@ const useStyles = makeStyles({
     transform: "scale(0.8)",
   },
   title: {
-    fontSize: 14,
+    color: "#00ad9f"
   },
   pos: {
     marginBottom: 12,
@@ -36,9 +39,9 @@ export default function TechnicalSkillsCard({
 
   return (
     <Grid container item xs={2} lg={3}>
-      <Card className={classes.root}>
+      <Card className={classes.card}>
         <CardContent>
-          <Typography variant="h6" component="h6">
+          <Typography variant="h6" component="h6" className={classes.title}>
             {title}
           </Typography>
           {description && (
