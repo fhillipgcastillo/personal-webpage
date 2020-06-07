@@ -38,6 +38,7 @@ const useStyles = makeStyles({
 });
 
 import logo from "../../assets/FC logo.png";
+import ExternalLink from "../ExternalLink";
 
 export default function Navba() {
   const classes = useStyles();
@@ -63,10 +64,14 @@ export default function Navba() {
         <div className={classes.grow3} />
         <div className={classes.flexGrow}>
           <Typography variant="h6" className={classes.title}>
-            <a href="https://www.linkedin.com/in/fhillip-g-castillo-5567a18b/">Linkedin</a>
+            <ExternalLink to="https://www.linkedin.com/in/fhillip-g-castillo-5567a18b/">Linkedin</ExternalLink>
+          </Typography>
+          <Typography variant="h6" className={classes.title}>
+            <ExternalLink to="https://github.com/fhillipgcastillo">Github</ExternalLink>
           </Typography>
         </div>
       </Toolbar>
     </AppBar>
   );
 }
+
