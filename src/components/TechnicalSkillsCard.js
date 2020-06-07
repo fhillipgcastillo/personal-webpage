@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 
 export default function TechnicalSkillsCard({
   title,
-  description = "",
+  description = null,
   level = 0.0,
   logo = null,
 }) {
@@ -38,7 +38,7 @@ export default function TechnicalSkillsCard({
     <Grid container item xs={2} lg={3}>
       <Card className={classes.root}>
         <CardContent>
-          <Typography variant="h5" component="h2">
+          <Typography variant="h6" component="h6">
             {title}
           </Typography>
           {description && (

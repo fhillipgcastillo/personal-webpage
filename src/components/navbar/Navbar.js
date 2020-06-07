@@ -63,7 +63,7 @@ export default function Navba() {
         <div className={classes.grow3} />
         <div className={classes.flexGrow}>
           <Typography variant="h6" className={classes.title}>
-            <Link to="https://www.linkedin.com/in/fhillip-g-castillo-5567a18b/">Linkedin</Link>
+            <a href="https://www.linkedin.com/in/fhillip-g-castillo-5567a18b/">Linkedin</a>
           </Typography>
         </div>
       </Toolbar>

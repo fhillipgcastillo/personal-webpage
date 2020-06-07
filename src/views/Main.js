@@ -55,7 +55,7 @@ export default function Main() {
   const profile = React.useRef({
     name: "Fhillip G. Castillo",
     avatar: profileImage,
-    geo: `I'm a person who loves to team work, I am also well experienced with Agile and Scrum Methodologies and my goals are to help my co-workers to grow and improve as software developers, deliver high-quality software, fast, with excellent user experience to commit the customers' needs and goals.`,
+    geo: `I'm a person who loves to team work, I'm well experienced with Agile and Scrum Methodologies and my goals are to help my co-workers to grow and improve as software developers, by delivering high-quality reliable software, fast, with excellent user experience to commit the customers' needs and goals.`,
     occupation: "Front-end Software Engeneering",
   });
   const experiences = React.useRef([
@@ -121,7 +121,7 @@ export default function Main() {
       jobType:"Intern"
     },
   ]);
-  const stack = React.useRef([{title: "React JS"}, {title: "React Native"}, {title: "React Hooks"}, {title: "Elasticsearch"}, {title: "MongoDB"}, {title: "bootstrap"}, {title: "git"}, {title: "javascript"}, {title: "es6"}, {title: "css"}, {title: "html"}, {title: "c#"}, {title: "asp .Net framework"}])
+  const stack = React.useRef([{title: "UI/UX Designer"}, {title: "React JS"}, {title: "React Native"}, {title: "React Hooks"}, {title: "Elasticsearch"}, {title: "MongoDB"}, {title: "bootstrap"}, {title: "git"}, {title: "javascript"}, {title: "NodeJs"}, {title: "es5"}, {title: "es6"}, {title: "css"}, {title: "html"}, {title: "c#"}, {title: "asp .Net"}])
   
   return (
     <Grid container style={useStyle.justContainer}   direction="row" justify="center">
