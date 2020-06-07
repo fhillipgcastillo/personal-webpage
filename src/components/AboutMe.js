@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import { useStyle } from "../views/Main.jsx";
+import { useStyle } from "../views/Main";
 
 export default function AboutMe({ profile }) {
   return (

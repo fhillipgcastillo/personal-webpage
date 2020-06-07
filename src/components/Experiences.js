@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import ExperienceCard from "./ExperienceCard.jsx";
-import { useStyle } from "../views/Main.jsx";
+import ExperienceCard from "./ExperienceCard";
+import { useStyle } from "../views/Main";
 
 export default function Experiences({ experiences = [] }) {
   return (

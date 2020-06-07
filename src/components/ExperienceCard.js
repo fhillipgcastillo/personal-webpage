@@ -27,7 +27,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function ExperienceCard({title="", company, startedDate, endedDate, description, id}) {
+export default function ExperienceCard({title="", company, jobType, startedDate, endedDate, description, id}) {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -38,7 +38,7 @@ export default function ExperienceCard({title="", company, startedDate, endedDat
           {title}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-        {company}
+        {jobType} at {company}
         </Typography>
         <Typography variant="body2" component="p">
           {`${startedDate} - ${endedDate}`}

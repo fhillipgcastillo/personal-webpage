@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Grid, Card, CardContent } from "@material-ui/core";
 import profileImage from "../assets/profile.jpg";
-import Experiences from "../components/Experiences.jsx";
-import AboutMe from "../components/AboutMe.jsx";
+import Experiences from "../components/Experiences";
+import AboutMe from "../components/AboutMe";
+import TechnicalSkills from "../components/TechnicalSkills";
 
 export const useStyle = {
   padding20hor: {
@@ -49,27 +50,15 @@ export const useStyle = {
   },
 };
 
-function WhiteContainer({ children }) {
-  return (
-    <Grid
-      container
-      style={useStyle.content}
-      direction="column"
-      justify="flex-start"
-      spacing={5}
-    >
-      {children}
-    </Grid>
-  );
-}
+
 export default function Main() {
-  const profile = {
+  const profile = React.useRef({
     name: "Fhillip G. Castillo",
     avatar: profileImage,
     geo: `I'm a person who loves to team work, I am also well experienced with Agile and Scrum Methodologies and my goals are to help my co-workers to grow and improve as software developers, deliver high-quality software, fast, with excellent user experience to commit the customers' needs and goals.`,
     occupation: "Front-end Software Engeneering",
-  };
-  const [experiences] = React.useState([
+  });
+  const experiences = React.useRef([
     {
       title: "Jr. Full Stack developer for a brand protection company",
       company: "Intellisys D. Corp.",
@@ -90,6 +79,7 @@ export default function Main() {
         "Git",
         "Bitbucket",
       ],
+      jobType:"Fulltime"
     },
     {
       title: "Full Stack Developer for some magazine media based company",
@@ -107,6 +97,7 @@ export default function Main() {
         "Git",
         "Bitbucket",
       ],
+      jobType:"Fulltime"
     },
     {
       title: "Full Stack Developer for a Mom's blog",
@@ -127,14 +118,17 @@ export default function Main() {
         "Git",
         "Bitbucket",
       ],
+      jobType:"Intern"
     },
   ]);
-
+  const stack = React.useRef([{title: "React JS"}, {title: "React Native"}, {title: "React Hooks"}, {title: "Elasticsearch"}, {title: "MongoDB"}, {title: "bootstrap"}, {title: "git"}, {title: "javascript"}, {title: "es6"}, {title: "css"}, {title: "html"}, {title: "c#"}, {title: "asp .Net framework"}])
+  
   return (
-    <Grid container style={useStyle.justContainer}>
+    <Grid container style={useStyle.justContainer}   direction="row" justify="center">
       <Grid container style={useStyle.preHeader}></Grid>
-      <AboutMe profile={profile} />
-      <Experiences experiences={experiences} />
+      <AboutMe profile={profile.current} />
+      <Experiences experiences={experiences.current} />
+      <TechnicalSkills skills={stack.current} />
     </Grid>
   );
 }
