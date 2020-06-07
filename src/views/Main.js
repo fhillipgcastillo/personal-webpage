@@ -37,7 +37,7 @@ export const useStyle = {
   },
   image: {
     width: 200,
-    height: 200,
+    height: 160,
     borderRadius: "50%",
     overflow: "hidden",
   },
@@ -124,7 +124,7 @@ export default function Main() {
   const stack = React.useRef([{title: "UI/UX Designer"}, {title: "React JS"}, {title: "React Native"}, {title: "React Hooks"}, {title: "Elasticsearch"}, {title: "MongoDB"}, {title: "bootstrap"}, {title: "git"}, {title: "javascript"}, {title: "NodeJs"}, {title: "es5"}, {title: "es6"}, {title: "css"}, {title: "html"}, {title: "c#"}, {title: "asp .Net"}])
   
   return (
-    <Grid container style={useStyle.justContainer}   direction="row" justify="center">
+    <Grid container style={useStyle.justContainer} direction="row" justify="center">
       <Grid container style={useStyle.preHeader}></Grid>
       <AboutMe profile={profile.current} />
       <Experiences experiences={experiences.current} />

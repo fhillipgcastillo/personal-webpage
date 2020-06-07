@@ -5,13 +5,15 @@ import { useStyle } from "../views/Main";
 
 export default function Experiences({ experiences = [] }) {
   return (
-    <Grid container style={{ ...useStyle.content, marginTop: 20 }}>
-      <h2 id="experiences">Experiences</h2>
-      <div>
-        {experiences.map((exp, index) => (
-          <ExperienceCard key={index} {...exp} />
-        ))}
-      </div>
+    <Grid container>
+      <Grid style={{ ...useStyle.content, marginTop: 20 }}>
+        <h2 id="experiences">Experiences</h2>
+        <div>
+          {experiences.map((exp, index) => (
+            <ExperienceCard key={index} {...exp} />
+          ))}
+        </div>
+      </Grid>
     </Grid>
   );
 }
