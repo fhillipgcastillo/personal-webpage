@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import { getUserProfile } from "../tools/api";
 
 const useStyle = {
   content: {
@@ -27,7 +28,9 @@ const useStyle = {
   },
 };
 
-export default function AboutMe({ profile }) {
+export default function AboutMe({ profileName }) {
+  const profile = React.useRef(getUserProfile(profileName));
+
   return (
     <Grid container>
       <Grid
@@ -48,7 +51,7 @@ export default function AboutMe({ profile }) {
             justify="flex-start"
             alignItems="center"
           >
-            <img src={profile.avatar} style={useStyle.image} />
+            <img src={profile.current.avatar} style={useStyle.image} />
           </Grid>
         </Grid>
         <Grid container>
@@ -61,35 +64,8 @@ export default function AboutMe({ profile }) {
             alignItems="center"
             style={{ ...useStyle.textCenter }}
           >
-            <h3 className="jss16">{profile.name} </h3>
-            <h4>{profile.occupation}</h4>
-            <button
-              className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-              type="button"
-            >
-              <span className="MuiButton-label">
-                <i className="fab fa-twitter"></i>
-              </span>
-              <span className="MuiTouchRipple-root">tw</span>
-            </button>
-            <button
-              className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-              type="button"
-            >
-              <span className="MuiButton-label">
-                <i className="fab fa-instagram"></i>
-              </span>
-              <span className="MuiTouchRipple-root">ig</span>
-            </button>
-            <button
-              className="MuiButtonBase-root MuiButton-root jss158 jss178 jss179 MuiButton-text"
-              type="button"
-            >
-              <span className="MuiButton-label">
-                <i className="fab fa-facebook"></i>
-              </span>
-              <span className="MuiTouchRipple-root">fb</span>
-            </button>
+            <h3 className="jss16">{profile.current.name} </h3>
+            <h4>{profile.current.occupation}</h4>
           </Grid>
         </Grid>
         <Grid
@@ -99,7 +75,7 @@ export default function AboutMe({ profile }) {
           alignItems="center"
         >
           <Grid item xs={6} style={{ ...useStyle.textCenter }}>
-            {profile.geo}
+            {profile.current.geo}
           </Grid>
         </Grid>
       </Grid>
