@@ -1,7 +1,19 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import ExperienceCard from "./ExperienceCard";
-import { useStyle } from "../views/Main";
+
+const useStyle = {
+  content: {
+    margin: "auto",
+    backgroundColor: "white",
+    borderRadius: 5,
+    boxShadow: "0px 1px 5px",
+    transform: "translate(0px, 0px)",
+    position: "relative",
+    maxWidth: 800,
+    padding: 10,
+  }
+};
 
 export default function Experiences({ experiences = [] }) {
   return (

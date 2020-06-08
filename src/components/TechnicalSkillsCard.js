@@ -1,9 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Grid } from "@material-ui/core";
 
@@ -14,7 +12,7 @@ const useStyles = makeStyles({
     marginTop: 15,
     marginBottom: 15,
     width: "90%",
-    textAlign: "center"
+    textAlign: "center",
   },
   bullet: {
     display: "inline-block",
@@ -22,7 +20,7 @@ const useStyles = makeStyles({
     transform: "scale(0.8)",
   },
   title: {
-    color: "#00ad9f"
+    color: "#00ad9f",
   },
   pos: {
     marginBottom: 12,

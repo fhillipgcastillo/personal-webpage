@@ -1,6 +1,31 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import { useStyle } from "../views/Main";
+
+const useStyle = {
+  content: {
+    margin: "auto",
+    backgroundColor: "white",
+    borderRadius: 5,
+    boxShadow: "0px 1px 5px",
+    transform: "translate(0px, 0px)",
+    position: "relative",
+    maxWidth: 800,
+    padding: 10,
+  },
+  image: {
+    width: 200,
+    height: 160,
+    borderRadius: "50%",
+    overflow: "hidden",
+  },
+  avatar: {
+    width: 200,
+    transform: "translate(0px, -50%)",
+  },
+  textCenter: {
+    textAlign: "center",
+  },
+};
 
 export default function AboutMe({ profile }) {
   return (
