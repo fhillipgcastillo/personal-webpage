@@ -14,7 +14,7 @@ export function getExperiences(profileName) {
   return profileExperiences.experiences;
 }
 
-export function getExtacks(profileName) {
+export function getStacks(profileName) {
   const profileStack = db.stacks.find((s) => byProfileName(s, profileName));
   return profileStack.stack;
 }

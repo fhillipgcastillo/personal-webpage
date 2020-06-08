@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import ExperienceCard from "./ExperienceCard";
+import { getExperiences } from "../tools/api";
 
 const useStyle = {
   content: {
@@ -12,16 +13,19 @@ const useStyle = {
     position: "relative",
     maxWidth: 800,
     padding: 10,
+    marginTop: 20 
   }
 };
 
-export default function Experiences({ experiences = [] }) {
+export default function Experiences({ profileName }) {
+  const experiences = React.useRef(getExperiences(profileName));
+
   return (
     <Grid container>
-      <Grid style={{ ...useStyle.content, marginTop: 20 }}>
+      <Grid style={{ ...useStyle.content}}>
         <h2 id="experiences">Experiences</h2>
         <div>
-          {experiences.map((exp, index) => (
+          {experiences.current.map((exp, index) => (
             <ExperienceCard key={index} {...exp} />
           ))}
         </div>

@@ -11,11 +11,6 @@ const useStyles = makeStyles({
     marginTop: 15,
     marginBottom: 15,
   },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)",
-  },
   title: {
     color: "#00ad9f",
   },
@@ -34,7 +29,6 @@ export default function ExperienceCard({
   id,
 }) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.card}>

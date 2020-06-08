@@ -4,7 +4,6 @@ import Experiences from "../components/Experiences";
 import AboutMe from "../components/AboutMe";
 import TechnicalSkills from "../components/TechnicalSkills";
 import PreHeader from "../components/PreHeader";
-import {getUserProfile, getExperiences, getExtacks} from "../tools/api";
 
 const useStyle = {
   padding20hor: {
@@ -53,17 +52,14 @@ const useStyle = {
 
 
 export default function Main() {
-  const profileName = "Fhillip G. Castillo"
-  const profile = React.useRef(getUserProfile(profileName));
-  const experiences = React.useRef(getExperiences(profileName));
-  const stack = React.useRef(getExtacks(profileName));
+  const [profileName] = React.useState("Fhillip G. Castillo");
   
   return (
     <Grid container style={useStyle.justContainer} direction="row" justify="center">
       <PreHeader />
-      <AboutMe profile={profile.current} />
-      <Experiences experiences={experiences.current} />
-      <TechnicalSkills skills={stack.current} />
+      <AboutMe profileName={profileName} />
+      <Experiences profileName={profileName} />
+      <TechnicalSkills profileName={profileName}/>
     </Grid>
   );
 }
