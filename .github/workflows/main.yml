@@ -26,4 +26,4 @@ jobs:
     - name: Deploy to Github Pages
       run: | 
         npm install --production
-        npm deploy
+        npm run deploy
