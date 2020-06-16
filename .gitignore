@@ -106,3 +106,5 @@ dist
 # webpack build path
 dist/
 build/
+
+*.log
