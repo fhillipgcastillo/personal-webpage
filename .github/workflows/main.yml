@@ -25,5 +25,5 @@ jobs:
     # Runs multiple command using the runners shell
     - name: Deploy to Github Pages
       run: | 
-      npm install --production,
-      npm deploy
+        npm install --production
+        npm deploy
