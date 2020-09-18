@@ -2,7 +2,7 @@
   "profiles": [
     {
       "name": "Fhillip G. Castillo",
-      "avatar": "https://media-exp1.licdn.com/dms/image/C4E03AQFJwWZHRomd2w/profile-displayphoto-shrink_200_200/0?e=1597276800&v=beta&t=07MMK9jq3b3n-WeDkOv8xiRcNbA9_OYV-TJMlLSTIxo",
+      "avatar": "src/assets/profile.jpg",
       "geo": "I've been a full-stack software developer with nearly 6 years of experience implementing Agile methodologies, continuous delivery and developing software while using different technologies' stack. My goals are understanding, developing, and solving the different organizations' dares.",
       "occupation": "Full Stack Software Engeneering"
     }
