@@ -14,14 +14,20 @@ const useStyle = {
     padding: 10,
   },
   image: {
-    width: 200,
-    height: 160,
-    borderRadius: "50%",
-    overflow: "hidden",
+    width: 200
   },
   avatar: {
     width: 200,
     transform: "translate(0px, -50%)",
+  },
+  roundedAvatar: {
+    overflow: "hidden",
+    justifyContent: "center",
+    display: "flex",
+    position: "relative",
+    borderRadius: "50%",
+    width: 160,
+    height: 160,
   },
   textCenter: {
     textAlign: "center",
@@ -51,7 +57,11 @@ export default function AboutMe({ profileName }) {
             justify="flex-start"
             alignItems="center"
           >
-            <img src={profile.current.avatar} style={useStyle.image} />
+            <div 
+              style={useStyle.roundedAvatar}
+            >
+              <img src={profile.current.avatar} style={useStyle.image} />
+            </div>
           </Grid>
         </Grid>
         <Grid container>
