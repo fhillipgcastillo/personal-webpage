@@ -23,8 +23,9 @@ jobs:
         persist-credentials: false
     
     - name: Build
-      run:
+      run: |
         npm install --production
+        npm run build
 
     # Runs multiple command using the runners shell
     - name: Deploy to Github Pages
